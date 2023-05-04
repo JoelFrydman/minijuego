@@ -1,9 +1,12 @@
+import { Text, View } from "react-native";
+
 import React from "react";
-import { View } from "react-native";
 import styles from "./styles";
 
-const Card = ({ newStyles, children }) => {
-  return <View style={{ ...styles.container, ...newStyles }}>{children}</View>;
+const Card = ({ children, otherStyles }) => {
+  return (
+    <View style={{ ...styles.container, ...otherStyles }}>{children}</View>
+  );
 };
 
 export default Card;

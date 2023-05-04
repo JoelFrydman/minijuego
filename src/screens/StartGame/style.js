@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import colors from "../../constants/colors";
 
 const styles = StyleSheet.create({
   container: {
@@ -6,10 +7,10 @@ const styles = StyleSheet.create({
     padding: 10,
     alignItems: "center",
     paddingTop: 50,
-    backgroundColor: "#161920",
+    backgroundColor: colors.primary,
   },
   subtitle: {
-    color: "black",
+    color: colors.black,
   },
   buttonContainer: {
     flexDirection: "row",
@@ -20,13 +21,27 @@ const styles = StyleSheet.create({
   },
   cleanButton: {
     width: 100,
-    backgroundColor: "grey",
+    height: 35,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: colors.disableColor,
     borderRadius: 10,
   },
-  confirmStyle: {
+  confirmButton: {
     width: 100,
-    backgroundColor: "green",
+    height: 35,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: colors.actionColor,
     borderRadius: 10,
+  },
+  selectedCard: {
+    marginTop: 50,
+    width: "70%",
+  },
+  buttonText: {
+    color: colors.white,
+    fontSize: 15,
   },
 });
 
