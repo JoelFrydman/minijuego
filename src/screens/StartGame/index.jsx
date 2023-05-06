@@ -52,12 +52,6 @@ const StartGame = ({ onStartGame }) => {
               onChangeText={handleInput}
             />
             <View style={styles.buttonContainer}>
-              <View style={styles.cleanButton}>
-                <Button title="Clean" />
-              </View>
-              <View style={styles.confirmStyle}>
-                <Button title="Confirm" />
-              </View>
               <TouchableOpacity
               style={styles.cleanButton}
               onPress={handleResetInput}
